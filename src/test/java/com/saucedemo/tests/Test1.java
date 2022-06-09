@@ -17,7 +17,12 @@ public class Test1 {
 
         PageFactory.initElements(Driver.getDriver(), this);
 
-        SauceDemo Sd= new SauceDemo();
+        SauceDemo Sd = new SauceDemo();
+
+
+
+
+    }
 
 
 
