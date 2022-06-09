@@ -1,27 +1,28 @@
-package com.cydeo.tests;
+package com.All.tests;
 
-import com.cydeo.pages.Nmr;
 import com.utilities.Driver;
 import com.utilities.WebsitesReader;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class Notification_message_rendered {
+import java.util.ArrayList;
+import java.util.List;
 
+public class All_Test {
     @BeforeMethod
     public void setupMethod() {
-        Driver.getDriver().get(WebsitesReader.getProperty("notification_message_rendered"));
+        Driver.getDriver().get(WebsitesReader.getProperty("all"));
 
     }
     @Test
-    public void Notification_message_rendered() {
+    public void All_Test() {
 
         PageFactory.initElements(Driver.getDriver(), this);
 
-        Nmr Nmr = new Nmr();
 
-        Nmr.clickHere.click();
+        List<WebElement> allLink = new ArrayList<>();
 
 
 
@@ -29,4 +30,3 @@ public class Notification_message_rendered {
     }
 
 }
-
