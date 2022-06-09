@@ -31,8 +31,10 @@ public class RegForm {
     @FindBy(xpath = "//input[@name='birthday'] ")
     public WebElement birtday;
 
+
     @FindBy(xpath = " //select[@name='department']")
     public WebElement deparmant;
+
 
 
 
