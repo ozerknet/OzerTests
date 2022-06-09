@@ -33,7 +33,22 @@ public class RegForm {
 
 
     @FindBy(xpath = " //select[@name='department']")
-    public WebElement deparmant;
+    public WebElement deparmennt;
+    //
+    @FindBy(xpath = " //select[@name='job_title']")
+    public WebElement jobTitle;
+
+
+
+    @FindBy(xpath = "//input[@id='inlineCheckbox2']")
+    public WebElement javaButton;
+
+    //button[@id='wooden_spoon']
+    @FindBy(xpath = "//button[@id='wooden_spoon']")
+    public WebElement signUpButton;
+
+
+
 
 
 
