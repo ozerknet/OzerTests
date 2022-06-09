@@ -10,7 +10,7 @@ public class Notification_message_rendered {
 
     @BeforeMethod
     public void setupMethod() {
-        Driver.getDriver().get("https://practice.cydeo.com/dynamic_controls");
+        Driver.getDriver().get("?");
 
     }
     @Test
@@ -19,6 +19,9 @@ public class Notification_message_rendered {
         PageFactory.initElements(Driver.getDriver(), this);
 
         Nmr Nmr = new Nmr();
+
+        Nmr.clickHere.click();
+
 
     }
 
