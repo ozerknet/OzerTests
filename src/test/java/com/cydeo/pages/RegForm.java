@@ -24,6 +24,9 @@ public class RegForm {
 
     @FindBy(xpath = "//input[@name='phone'] ")
     public WebElement phone;
+    @FindBy(xpath = "//input[@name='password'] ")
+    public WebElement password;
+
 
     @FindBy(xpath = "(//input[@name='gender'])[1] ")
     public WebElement genderMale;
@@ -46,6 +49,10 @@ public class RegForm {
     //button[@id='wooden_spoon']
     @FindBy(xpath = "//button[@id='wooden_spoon']")
     public WebElement signUpButton;
+
+    @FindBy(xpath = "//h4")
+    public WebElement wellDone;
+
 
 
 
