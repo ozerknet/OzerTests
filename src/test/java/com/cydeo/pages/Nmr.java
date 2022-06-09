@@ -17,5 +17,8 @@ public class Nmr {
     @FindBy(xpath = "//a[.='Click here']")
     public WebElement clickHere;
 
+    @FindBy (xpath = "//div[@id='flash']")
+    public WebElement actionSuccessfull;
+
 
 }

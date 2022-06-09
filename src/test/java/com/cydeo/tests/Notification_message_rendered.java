@@ -22,6 +22,8 @@ public class Notification_message_rendered {
 
         Nmr.clickHere.click();
 
+        Nmr.actionSuccessfull.isDisplayed();
+
 
     }
 
