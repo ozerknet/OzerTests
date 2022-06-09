@@ -17,6 +17,6 @@ public class SauceDemo {
     @FindBy(xpath = "//input[@id='password']")
     public WebElement password;
 
-    @FindBy(tagName = "//input[@type='submit']")
+    @FindBy(xpath = "//input[@id='login-button']")
     public WebElement login;
 }

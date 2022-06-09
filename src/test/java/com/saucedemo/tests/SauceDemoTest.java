@@ -8,20 +8,23 @@ import org.testng.annotations.Test;
 
 public class SauceDemoTest {
 
-SauceDemo sauceDemo=new SauceDemo();
-@BeforeMethod
-    public void setupMethod(){
-    Driver.getDriver().get("https://www.saucedemo.com/");}
-@Test
-        public void test(){
+    SauceDemo sauceDemo = new SauceDemo();
 
-    sauceDemo.username.sendKeys("standard_user");
+    @BeforeMethod
+    public void setupMethod() {
+        Driver.getDriver().get("https://www.saucedemo.com/");
+    }
 
-    sauceDemo.password.sendKeys("secret_sauce");
-    sauceDemo.login.click();
+    @Test
+    public void test1() {
+
+        sauceDemo.username.sendKeys("standard_user");
+
+        sauceDemo.password.sendKeys("secret_sauce");
+
+        sauceDemo.login.click();
 
 
+    }
 
-
-}
 }
