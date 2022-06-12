@@ -25,8 +25,7 @@ public class All_Test {
         List <WebElement> allLinks =  Driver.getDriver().findElements(By.xpath("//div[@class='entry-content']/ul[1]/li/strong/a"));
         System.out.println("allLinks.size() = " + allLinks.size());
         for (WebElement allLink : allLinks) {
-            System.out.println("allLink = " + allLink.getAttribute("href"));
-        }
+            System.out.println("allLink = " + allLink.getText() + allLink.getAttribute("href"));        }
 
 
 
