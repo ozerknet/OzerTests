@@ -29,7 +29,7 @@ public class Test20Page extends BasePage {
     public WebElement addToCart;
 
     @FindBy (xpath = "//button[.='Continue Shopping']")
-    public WebElement cintinueShopping;
+    public WebElement continueShopping;
 
 
 

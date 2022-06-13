@@ -2,12 +2,15 @@ package com.automationexercise.tests;
 
 import com.automationexercise.pages.BasePage;
 import com.automationexercise.pages.Test20Page;
+import com.utilities.BrowserUtils;
 import com.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -25,6 +28,8 @@ public class Test20 {
 
         //2. Navigate to url 'http://automationexercise.com'
         Driver.getDriver().get("http://automationexercise.com");
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
+
 
         //3. Click on 'Products' button
         basePage.products.click();
@@ -57,9 +62,19 @@ public class Test20 {
         }
         //8. Add those products to cart
 
+        for (WebElement webElement : resultList) {
+//            wait.until(ExpectedConditions.visibilityOf(test20Page.addToCart));
+//            test20Page.addToCart.click();
+//            wait.until(ExpectedConditions.visibilityOf(test20Page.continueShopping));
+//            test20Page.continueShopping.click();
+
+        }
+
 
 
         //9. Click 'Cart' button and verify that products are visible in cart
+            basePage.view_cart.click();
+
         //10. Click 'Signup / Login' button and submit login details
         //11. Again, go to Cart page
         //12. Verify that those products are visible in cart after login as well
