@@ -15,6 +15,9 @@ public class BasePage {
     public BasePage(){
         PageFactory.initElements(Driver.getDriver(),this);}
 
+    @FindBy (xpath = "//img[@src='/static/images/home/logo.png']")
+    public WebElement automationExerciseImg;
+
     @FindBy(xpath = "//li//a[@href='/']")
     public WebElement home;
 
